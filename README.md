@@ -20,6 +20,15 @@ cd scheduling_app
 pip install -r requirements.txt
 ```
 
+Create a file named config.py in the main folder and store your keys according to this format:
+
+```
+
+OPENAI_API_KEY = 
+SECRET_KEY= 
+
+```
+
 ## Running the App
 
 ```
