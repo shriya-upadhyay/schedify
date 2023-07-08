@@ -20,7 +20,7 @@ cd scheduling_app
 pip install -r requirements.txt
 ```
 
-Create a file named config.py in the main folder and store your keys according to this format:
+Create a file named config.py in the main folder and store your keys according to this format (you will need the OpenAI API Subscription):
 
 ```
 
