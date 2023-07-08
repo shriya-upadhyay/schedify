@@ -3,7 +3,7 @@
 {% block content
 %}
 
-<h1> This is the schedule page </h1>
+<h1> <center> This is your custom schedule: </center> </h1>
 
 <body>
     <table border = 1>
@@ -14,8 +14,13 @@
           </tr>
        {% endfor %}
     </table>
- </body>
 
+{% if s == ""%}
+<p> "No possible schedule returned by ChatGPT" </p>
+
+{%endif%}
+
+ </body>
 
 
 {% endblock %} 

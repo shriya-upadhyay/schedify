@@ -21,14 +21,17 @@ def home():
         else:
             wake_up_time = request.form["wake_up_time"]
             sleep_time = request.form["sleep_time"]
-            s = ask_gpt("Wake Up time: " + wake_up_time + " Sleep Time: " + sleep_time + " Tasks: " + str(tasks.keys()) + " for " + str(tasks.values()) + " minutes. ") 
-            print(s)
+            filled = bool(tasks)
+
+            if filled:
+                s = ask_gpt("Wake Up time: " + wake_up_time + " Sleep Time: " + sleep_time + " Tasks: " + str(tasks.keys()) + " for " + str(tasks.values()) + " minutes each, respectively. For example, " + str(list(tasks.keys())[0]) + "should take " + str(list(tasks.values())[0]) + " minutes." )
+            else:
+                s = ask_gpt("Wake Up time: " + wake_up_time + " Sleep Time: " + sleep_time)
             tasks.clear()
             return render_template("sched.html", schedule = s, text = "This is your schedule:")
 
 
         
-        print (tasks.items())
     return render_template("home.html")
 
 @views.route('/sched/<schedule>')
