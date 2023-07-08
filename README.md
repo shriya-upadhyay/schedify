@@ -1,4 +1,4 @@
-# scheduling_app
+# schedify
 
 ## Getting Started
 
