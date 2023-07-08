@@ -7,10 +7,10 @@ This application uses the ChatGPT API and Flask/Python to create the perfect sch
 ## Setup and Installation
 
 
-'''
+```
 git clone https://github.com/u-shriya/scheduling_app
 
-'''
+```
 
 
 
