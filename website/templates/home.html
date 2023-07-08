@@ -3,8 +3,33 @@
 {% block content
 %}
 
-<form method="POST">
-    <h3 align="center">Enter characteristics for your schedule: </h3>
+<br /> 
+<br /> 
+
+
+<h3 align="center">Enter characteristics for your schedule: </h3>
+ 
+<form id="taskForm" method="POST">
+
+<div>
+  <label for="taskName">Task Name:</label>
+  <input type="text" id="taskName" name="taskName" required>
+</div>
+<div>
+  <label for="allottedTime">Allotted Time (in minutes):</label>
+  <input type="number" id="allottedTime" name="allottedTime" required>
+</div>
+<br /> 
+
+<button type="submit"  class="btn btn-primary" onclick="addTask()">Add Task</button>
+
+</form>
+
+<br /> 
+<br /> 
+
+
+<form id="dataForm" method="POST">
     <div class="form-group">
       <label for="wake_up_time">Wake Up Time</label>
       <input
@@ -26,6 +51,7 @@
         />
     </div>
 
+    <!--
     <div class="form-group">
         <label for="task1">Task # 1</label>
         <input
@@ -48,7 +74,10 @@
         />
     </div>
 
-    <br />
+    --> 
+        <br />
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+
+
 {% endblock %} 
