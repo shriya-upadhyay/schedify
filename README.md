@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-This application uses the OpenAI API and Flask/Python to create the perfect schedule for a user based on their desired characteristics.
+This application uses the OpenAI API and Flask/Python to create an optimal schedule for a user based on their desired characteristics.
 
 ## Setup and Installation
 
