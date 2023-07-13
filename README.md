@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-This application uses the OpenAI API and Flask/Python to create the perfect schedule for a user based on their desired characteristics.
+This application uses the OpenAI API and Flask/Python to create an optimal schedule for a user based on their desired characteristics.
 
 ## Setup and Installation
 
@@ -30,14 +30,14 @@ SECRET_KEY=
 ```
 
 ## Running the App
-
+Type the following into the terminal: 
 ```
 python3 main.py
 ```
 
 ## Interacting with the App
-
-Open `http://127.0.0.1:5000` in browser
+If using port 5000, 
+Open `http://127.0.0.1:5000` in web browser
 
 
 
