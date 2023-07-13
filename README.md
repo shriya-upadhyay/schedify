@@ -30,14 +30,14 @@ SECRET_KEY=
 ```
 
 ## Running the App
-
+Type the following into the terminal: 
 ```
 python3 main.py
 ```
 
 ## Interacting with the App
 
-Open `http://127.0.0.1:5000` in browser
+Open `http://127.0.0.1:5000` in web browser
 
 
 
