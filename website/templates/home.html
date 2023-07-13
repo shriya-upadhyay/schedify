@@ -1,33 +1,38 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} 
-
-{% block content
-%}
+{% block css%}
+  <link rel="stylesheet" href="/static/home.css">
+{% endblock %}
+{% block content%}
 
 <br /> 
 <br /> 
 
 
-<h3 align="center">Enter characteristics for your schedule: </h3>
- 
+<h3 align="center">Enter characteristics for your schedule: </h3> 
+<div id = "taskTimes">
+<div id = "tasks">
+ <h6> After filling out information for <b>each task</b>, press "Add Task" to add it to the schedule </h6> 
 <form id="taskForm" method="POST">
 
 <div>
-  <label for="taskName">Task Name:</label>
+  <label for="taskName" id = "taskN">Task Name:    </label>
   <input type="text" id="taskName" name="taskName" required>
 </div>
 <div>
-  <label for="allottedTime">Allotted Time (in minutes):</label>
+  <label for="allottedTime">Allotted Time (minutes):</label>
   <input type="number" id="allottedTime" name="allottedTime" required>
 </div>
 <br /> 
 
-<button type="submit"  class="btn btn-primary">Add Task</button>
+<button type="submit"  class="btn btn-primary" id = "addTaskButton">Add Task</button>
 
 </form>
 
 <br /> 
 <br /> 
+</div>
 
+<div id = "times">
 
 <form id="dataForm" method="POST">
     <div class="form-group">
@@ -50,7 +55,8 @@
           placeholder="Enter time"
         />
     </div>
-
+  </div>
+</div>
     <!--
     <div class="form-group">
         <label for="task1">Task # 1</label>
@@ -76,7 +82,10 @@
 
     --> 
         <br />
+
+        <div class id = "submitButton">
     <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
   </form>
 
 
