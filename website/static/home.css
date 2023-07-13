@@ -9,16 +9,21 @@ h3
 {
     font-family: 'Karla', sans-serif;
     margin-bottom: 15px;
+    
 }
 h6
 {
     font-family: 'Karla', sans-serif;
-    margin-top: 15px;
+    
+    color: white;
+    width: 450px;
+    margin: 15px auto;
 }
 label
 {
     font-family: 'Karla', sans-serif;
     font-weight: bolder;
+    color: white;
 }
 
 
@@ -39,20 +44,24 @@ label
 
 #times
 {
+    display: flex;
     background-color: #F4D059;
     width: 500px;
     margin: 0 10px;
     border-radius: 10px;
     text-align: center;
     align-items: center;
+    justify-content: center;
     
 }
 
 .btn.btn-primary {
 
-    background-color: #58E472;
+    background-color: #93F594;
     border: none;
-    border-color: #58E472;
+    border-color: #93F594;
+    font-family: 'Karla', sans-serif;
+    color: black;
 
 }
 
@@ -66,4 +75,12 @@ display: flex;
 #taskN
 {
     margin-top: 25px;
+    width: 192px;
+}
+
+input{
+    font-family: 'Karla', sans-serif;
+}
+input[type="time"]{
+    width: 100px;
 }
