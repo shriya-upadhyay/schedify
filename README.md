@@ -36,7 +36,7 @@ python3 main.py
 ```
 
 ## Interacting with the App
-
+If using port 5000, 
 Open `http://127.0.0.1:5000` in web browser
 
 
