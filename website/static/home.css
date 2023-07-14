@@ -75,6 +75,10 @@ label
     color: black;
 
 }
+.btn.btn-primary:hover
+{
+    opacity: 0.8;
+}
 
 #submitButton
 {
