@@ -8,7 +8,7 @@ This application uses the OpenAI API and Flask/Python to create an optimal sched
 
 
 ```
-git clone https://github.com/u-shriya/scheduling_app
+git clone https://github.com/shriya-upadhyay/scheduling_app
 
 ```
 
